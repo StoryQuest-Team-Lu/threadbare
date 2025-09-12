@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=4 uid="uid://3gbltv5b00ql"]
+[gd_scene load_steps=31 format=4 uid="uid://3gbltv5b00ql"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_q0jng"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_5q6vb"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_crglt"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_hh2c5"]
+[ext_resource type="Texture2D" uid="uid://gf8h2kv1i7a0" path="res://scenes/quests/story_quests/clark/clark_player_components/New Piskel-2.png" id="5_3wprx"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_tu35a"]
 [ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="6_tw3ml"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_05rff"]
@@ -12,6 +13,113 @@
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_xgou8"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_qk67g"]
 [ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_6u5o5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wprx"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imupx"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uibx4"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 128, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qura"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrx7s"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imnao"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 128, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7ru6"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_humtl"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vk1l7"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 128, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppmnj"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iihh4"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 64, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ou2my"]
+atlas = ExtResource("5_3wprx")
+region = Rect2(0, 128, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_imupx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wprx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imupx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uibx4")
+}],
+"loop": true,
+"name": &"alerted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qura")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrx7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imnao")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7ru6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_humtl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vk1l7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppmnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iihh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ou2my")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
 
 [sub_resource type="Curve2D" id="Curve2D_vnsq3"]
 _data = {
@@ -73,6 +181,8 @@ position = Vector2(131, 463)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 process_mode = 3
+position = Vector2(7, 20)
+scale = Vector2(inf_neg, nan)
 limit_left = 0
 limit_top = 0
 position_smoothing_enabled = true
@@ -83,6 +193,8 @@ y_sort_enabled = true
 
 [node name="Guard1-GoingBackAndForth" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("4_hh2c5")]
 position = Vector2(526, 470)
+scale = Vector2(1.76105, 1.16)
+sprite_frames = SubResource("SpriteFrames_imupx")
 patrol_path = NodePath("../Guard1-PatrolPath")
 move_speed = 200.0
 
