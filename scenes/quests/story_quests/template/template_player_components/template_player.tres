@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=30 format=3 uid="uid://b27sqqvdmufne"]
+[gd_resource type="SpriteFrames" load_steps=30 format=3 uid="uid://bnjxi6eayjssy"]
 
 [ext_resource type="Texture2D" uid="uid://drsfkwvrsagi5" path="res://scenes/clark_player_walk_turtle.png" id="1_f6cqg"]
 [ext_resource type="Texture2D" uid="uid://dwjtxyn7fjc5p" path="res://scenes/clark_player_dead_turtle.png" id="2_5ebfn"]
