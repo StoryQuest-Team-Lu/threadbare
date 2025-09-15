@@ -73,7 +73,8 @@ editor_draw_limits = true
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(400, 349)
+position = Vector2(636, 202)
+scale = Vector2(1.2474, 1.28385)
 sprite_frames = ExtResource("3_gjvr3")
 animation = &"walk"
 autoplay = "idle"
