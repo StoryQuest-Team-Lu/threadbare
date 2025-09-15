@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c0itxt8w3yml0" path="res://scenes/quests/story_quests/template/template_player_components/template_player_attack_01.png" id="1_wj51i"]
 [ext_resource type="Texture2D" uid="uid://covbt3em3ppm1" path="res://scenes/quests/story_quests/template/template_player_components/template_player_attack_02.png" id="2_fsdns"]
-[ext_resource type="Texture2D" uid="uid://bu3iwg7bfdn8j" path="res://clark_player_dead_turtle.png" id="3_cjkke"]
+[ext_resource type="Texture2D" uid="uid://dwjtxyn7fjc5p" path="res://scenes/clark_player_dead_turtle.png" id="3_cjkke"]
 [ext_resource type="Texture2D" uid="uid://cr0aho7p8o4k3" path="res://scenes/quests/story_quests/clark/clark_player_components/clark_player_walk_turtle.png" id="5_1x0xi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yg72c"]
