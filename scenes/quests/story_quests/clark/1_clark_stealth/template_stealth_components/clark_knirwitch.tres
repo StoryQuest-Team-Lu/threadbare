@@ -1,0 +1,64 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://22fj87udvy6n"]
+
+[ext_resource type="Texture2D" uid="uid://c0hyixikvulbr" path="res://scenes/quests/story_quests/clark/1_clark_stealth/octopus .png" id="1_medus"]
+[ext_resource type="Texture2D" uid="uid://dft6nbvbb5rxc" path="res://scenes/quests/story_quests/clark/1_clark_stealth/octopus  2.png" id="2_onsrh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4ogm"]
+atlas = ExtResource("1_medus")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a03jw"]
+atlas = ExtResource("1_medus")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gagc5"]
+atlas = ExtResource("2_onsrh")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eps4m"]
+atlas = ExtResource("2_onsrh")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_demhs"]
+atlas = ExtResource("2_onsrh")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44jd6"]
+atlas = ExtResource("2_onsrh")
+region = Rect2(128, 128, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4ogm")
+}],
+"loop": true,
+"name": &"alerted",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a03jw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gagc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eps4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_demhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44jd6")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
