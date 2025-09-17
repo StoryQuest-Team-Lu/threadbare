@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://c4ww8g4jusqpd"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_fxm8o"]
-[ext_resource type="Resource" uid="uid://3vrn5jdxov37" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_combat.dialogue" id="2_3t3ix"]
+[ext_resource type="Resource" uid="uid://cdin0go5tobs2" path="res://scenes/quests/story_quests/clark/2_clark_combat/template_combat_components/clark_combat.dialogue" id="2_qvd35"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="3_iw5rn"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="4_bivjm"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="5_ocnlb"]
@@ -24,7 +24,7 @@ y_sort_enabled = true
 
 [node name="FillGameLogic" type="Node" parent="."]
 script = ExtResource("1_fxm8o")
-intro_dialogue = ExtResource("2_3t3ix")
+intro_dialogue = ExtResource("2_qvd35")
 metadata/_custom_type_script = "uid://cp54mgi54nywo"
 
 [node name="TileMapLayers" type="Node2D" parent="."]
@@ -50,11 +50,12 @@ y_sort_enabled = true
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("4_bivjm")]
 position = Vector2(348, 335)
-scale = Vector2(1.56329, 2.32)
+scale = Vector2(1.3, 1.929)
 
 [node name="ThrowingNPC" parent="OnTheGround" instance=ExtResource("5_ocnlb")]
 position = Vector2(857, 300)
-scale = Vector2(1.68, 1.84)
+scale = Vector2(1, 1.095)
+throwing_period = 3.3
 sprite_frames = ExtResource("6_5d3td")
 projectile_sprite_frames = ExtResource("7_nkhfb")
 
@@ -100,7 +101,7 @@ position = Vector2(868, 303)
 revealed = false
 next_scene = "uid://x3wm2ce0ax8i"
 item = SubResource("Resource_a51xm")
-collected_dialogue = ExtResource("2_3t3ix")
+collected_dialogue = ExtResource("2_qvd35")
 dialogue_title = &"well_done"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
