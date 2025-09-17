@@ -7,14 +7,14 @@
 [ext_resource type="SpriteFrames" uid="uid://bit5hwtjgjf78" path="res://scenes/quests/story_quests/clark/clark_player_components/clark_player.tres" id="4_xrx7s"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_tu35a"]
 [ext_resource type="SpriteFrames" uid="uid://2uuv8kkm4jfy" path="res://scenes/quests/story_quests/clark/1_clark_stealth/template_stealth_components/clark_guard_enemy.tres" id="6_imnao"]
-[ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="6_tw3ml"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_05rff"]
 [ext_resource type="SpriteFrames" uid="uid://22fj87udvy6n" path="res://scenes/quests/story_quests/clark/1_clark_stealth/template_stealth_components/clark_knirwitch.tres" id="8_imupx"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_nqbt4"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_t3111"]
-[ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_xgou8"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_qk67g"]
-[ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_6u5o5"]
+[ext_resource type="Resource" uid="uid://l4mlfkh13p4o" path="res://scenes/quests/story_quests/clark/1_clark_stealth/template_stealth_components/clark_collected.dialogue" id="13_xrx7s"]
+[ext_resource type="Resource" uid="uid://drdnl8sphp683" path="res://scenes/quests/story_quests/clark/1_clark_stealth/template_stealth_components/clark_stealth.dialogue" id="15_imnao"]
+[ext_resource type="Resource" uid="uid://c7k5qjwbsfukc" path="res://scenes/quests/story_quests/clark/1_clark_stealth/template_stealth_components/clark_checkpoint.dialogue" id="15_xrx7s"]
 
 [sub_resource type="Curve2D" id="Curve2D_xrx7s"]
 _data = {
@@ -118,7 +118,7 @@ y_sort_enabled = true
 position = Vector2(1704, 451)
 scale = Vector2(1.3, 1.3)
 sprite_frames = ExtResource("8_imupx")
-dialogue = ExtResource("6_tw3ml")
+dialogue = ExtResource("15_xrx7s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint"]
 position = Vector2(1, -2)
@@ -133,9 +133,9 @@ debug_color = Color(0, 0, 0, 0.42)
 position = Vector2(2335, 955)
 next_scene = "uid://thwcu5akkqp5"
 item = SubResource("Resource_idy4y")
-collected_dialogue = ExtResource("10_xgou8")
+collected_dialogue = ExtResource("13_xrx7s")
 
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("11_qk67g")
-dialogue = ExtResource("12_6u5o5")
+dialogue = ExtResource("15_imnao")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-Select the CollectibleItem node and set "Next Scene" and "Item > Type" in the Inspector.
-You're doin' great!
+Congratulations! You collected the first piece of fabric.
+Keep on going and show the world you are not an ordinary turtle...
+But a scientist turtle! 
+One step closer to the friendly sharks!
 => END
