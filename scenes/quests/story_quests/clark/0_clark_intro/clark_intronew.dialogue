@@ -5,6 +5,11 @@
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
 You know that feeling when you are swimming in the ocean? Like you can do anything in the world?
-What if I told you there is a fabric, not too far away and not too near, that can protect you from sharks, so you can feel truly free in the ocean?
+What if I told you there is a fabric, not too far away and not too near, that can protect you from sharks, so you can feel truly free in the ocean.
+In this game, you will play as the turtle, which represents one of the most fantastic marine biologists of ALL TIME...
+Eugenie CLark!
+Help her show the world that sharks are not evil by collecting threads!
+These threads also act as a shark repelent, which will help you as a turtle swim safely with sharks.
+Have fun and meet as many sharks as possible!
 do animation_player.play(&"walk_off")
 => END
