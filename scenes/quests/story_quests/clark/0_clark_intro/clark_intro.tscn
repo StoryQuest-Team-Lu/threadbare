@@ -143,5 +143,5 @@ libraries = {
 script = ExtResource("4_gn7sj")
 dialogue = ExtResource("5_70cas")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://coi4lvxir542y"
+next_scene = "uid://3gbltv5b00ql"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

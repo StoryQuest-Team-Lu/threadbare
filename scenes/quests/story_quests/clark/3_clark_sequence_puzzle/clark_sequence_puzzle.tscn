@@ -119,7 +119,7 @@ hint_sign = NodePath("../../Signs/HintSign2")
 [node name="CollectibleItem" parent="OnTheGround" instance=ExtResource("14_f2gkp")]
 position = Vector2(861, 282)
 revealed = false
-next_scene = "uid://cqjdjcwwfg0xi"
+next_scene = "uid://ihrdi5kq5q8r"
 item = SubResource("Resource_u8qfb")
 collected_dialogue = ExtResource("21_s7riw")
 dialogue_title = &"well_done"
