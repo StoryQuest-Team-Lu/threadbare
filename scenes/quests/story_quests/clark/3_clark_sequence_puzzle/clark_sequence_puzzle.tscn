@@ -16,10 +16,10 @@
 [ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="13_e48pv"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="14_f2gkp"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="15_3leml"]
-[ext_resource type="Resource" uid="uid://bb1g8ftnxjhvh" path="res://scenes/quests/story_quests/template/3_template_sequence_puzzle/template_sequence_puzzle.dialogue" id="16_0y364"]
 [ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="17_x8eyn"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="18_j776p"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="19_jl3kd"]
+[ext_resource type="Resource" uid="uid://b5rwn35fo5ybh" path="res://scenes/quests/story_quests/clark/3_clark_sequence_puzzle/clark_sequence_puzzle.dialogue" id="21_s7riw"]
 
 [sub_resource type="Resource" id="Resource_u8qfb"]
 script = ExtResource("15_3leml")
@@ -121,7 +121,7 @@ position = Vector2(861, 282)
 revealed = false
 next_scene = "uid://cqjdjcwwfg0xi"
 item = SubResource("Resource_u8qfb")
-collected_dialogue = ExtResource("16_0y364")
+collected_dialogue = ExtResource("21_s7riw")
 dialogue_title = &"well_done"
 
 [node name="Sign" parent="OnTheGround" instance=ExtResource("17_x8eyn")]
@@ -140,7 +140,7 @@ position_smoothing_enabled = true
 
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("19_jl3kd")
-dialogue = ExtResource("16_0y364")
+dialogue = ExtResource("21_s7riw")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="OnTheGround/CollectibleItem" method="reveal"]
