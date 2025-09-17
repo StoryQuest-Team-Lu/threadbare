@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds6v6mxd6t7gb"
-path="res://.godot/imported/clark_player_attack_turtle_1.png-cd15b4926f44d898dc86968480c9eb7b.ctex"
+uid="uid://bfyjq1hch0041"
+path="res://.godot/imported/octopus .png-9fcebe640e3ae0ca3c5ee59b66198335.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://clark_player_attack_turtle_1.png"
-dest_files=["res://.godot/imported/clark_player_attack_turtle_1.png-cd15b4926f44d898dc86968480c9eb7b.ctex"]
+source_file="res://octopus .png"
+dest_files=["res://.godot/imported/octopus .png-9fcebe640e3ae0ca3c5ee59b66198335.ctex"]
 
 [params]
 
